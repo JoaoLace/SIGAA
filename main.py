@@ -58,9 +58,8 @@ try:
 
     all_tasks = all_tasks.strip()  + "\n\n"    
 
-    f = open("tasks.txt", "w")
-    f.write(all_tasks)
-    f.close()
+    with open("tasks.txt") as f:
+        f.write(all_tasks)
 
 
 
